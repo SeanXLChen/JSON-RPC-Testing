@@ -1,10 +1,10 @@
 require('dotenv').config();
-const {ALCHEMY_URL} = process.env;
+const {API_KEY} = process.env;
 
 const axios = require('axios');
 
-//URL provided in your Alchemy.com dashboard
-const url = process.env.ALCHEMY_URL;
+//URL constructed from the Alchemy API Key
+const url = `https://eth-mainnet.g.alchemy.com/v2/${API_KEY}`;
 
 axios.post(url, {
   jsonrpc: "2.0",
