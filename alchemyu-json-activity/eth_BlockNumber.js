@@ -8,7 +8,7 @@ async function getBlockNumber() {
     const response = await axios.post(url, {
         jsonrpc: "2.0",
         id: 1,
-        method: "eth_blockNumber", // <-- TODO: fill in the method name
+        method: "eth_blockNumber", // Returns the number of the most recent block.
     });
 
     // axios has a data prop which is the response from the server
