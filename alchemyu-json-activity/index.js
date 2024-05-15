@@ -1,7 +1,9 @@
+require('dotenv').config();
+
 const axios = require('axios');
 
-// copy-paste your URL provided in your Alchemy.com dashboard
-const ALCHEMY_URL = "";
+//URL provided in your Alchemy.com dashboard
+const ALCHEMY_URL = process.env.ALCHEMY_URL;
 
 axios.post(ALCHEMY_URL, {
   jsonrpc: "2.0",
